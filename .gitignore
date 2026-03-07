@@ -1,6 +1,9 @@
 # Frontend
 node_modules
 
+# Listener frontend — lives in its own repo
+frontend-listener/
+
 # Junk/cache files.
 *Thumbs.db
 tmp/cache/*---*
