@@ -18,13 +18,15 @@ export const metadata: Metadata = {
   description: "Custom listener experience powered by AzuraCast.",
 };
 
+const forceWhiteText = process.env.NEXT_PUBLIC_FORCE_WHITE_TEXT === "true";
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={forceWhiteText ? "dark" : undefined}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
