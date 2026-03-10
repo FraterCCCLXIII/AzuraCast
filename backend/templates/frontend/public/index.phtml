@@ -29,7 +29,12 @@ $sections->appendStart('head');
     <meta name="mobile-web-app-status-bar-style" content="black">
     <meta name="mobile-web-app-title" content="<?= $this->e($station->name ?? '') ?>">
 
+    <meta name="description" content="<?= $this->e($station->description ?: 'Experience the Self in Sound') ?>">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Tiru.fm">
     <meta property="og:title" content="<?= $this->e($station->name ?? '') ?>">
+    <meta property="og:description" content="<?= $this->e($station->description ?: 'Experience the Self in Sound') ?>">
     <meta property="og:url" content="<?= $this->e($station->url ?? '') ?>">
     <meta property="og:image" content="<?= $nowPlayingArtUri ?>">
 

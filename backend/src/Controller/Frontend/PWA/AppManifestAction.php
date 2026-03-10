@@ -27,7 +27,7 @@ final class AppManifestAction implements SingleActionInterface
         $customization = $request->getCustomization();
 
         $manifest = [
-            'name' => $station->name . ' - AzuraCast',
+            'name' => $station->name . ' - Tiru.fm',
             'short_name' => $station->name,
             'description' => $station->description,
             'scope' => '/public/',
